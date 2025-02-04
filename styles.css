@@ -1,0 +1,100 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Signature Styles */
+.signature {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    font-family: 'Cursive', sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+/* Navigation Links Styles */
+.nav-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: Arial, sans-serif;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+.spacing {
+    margin-top: 50px; /* Adjust the value as needed */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+.education {
+    margin-top: 50px; /* Adjust this value to your preference */
+}
+
+
+/* Education Section */
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-item {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.icon {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+@media (min-width: 600px) {
+    .education {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .education-item {
+        width: 48%;
+    }
+}
